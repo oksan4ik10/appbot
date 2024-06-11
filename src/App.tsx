@@ -99,7 +99,7 @@ function App() {
 
   return (
     <>
-      {tg}
+      имя {user?.username}
 
 
       {isAuth && <Auth closeAuth={closeAuth}></Auth>}
