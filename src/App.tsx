@@ -85,7 +85,7 @@ function App() {
 
   const { user } = useTelegram();
   useEffect(() => {
-    if (user) {
+    if (user?.username) {
       setDataTg({
         email: "",
         name: user?.username ? user.username : "Тест",
