@@ -99,6 +99,7 @@ function App() {
 
   return (
     <>
+      {tg}
 
 
       {isAuth && <Auth closeAuth={closeAuth}></Auth>}
