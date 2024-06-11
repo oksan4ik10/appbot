@@ -87,14 +87,14 @@ function App() {
   useEffect(() => {
     if (user?.username) {
       setDataTg({
-        email: "",
+        email: "sdfdfzdsf",
         name: user?.username ? user.username : "Тест",
         phone: "787878",
         tg: true,
         token: "tg"
       })
     }
-  }, [user])
+  }, [])
 
 
   return (
