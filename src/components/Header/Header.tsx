@@ -41,12 +41,12 @@ function Header(props: IProps) {
                         <span className="button-auth-svg"></span>
                         <span className="button-text">Войти</span>
                     </button>
-                    <button className={"button button-cart " + ((!token || !user) ? "none" : "") + " " + style.cart} id="cart-button" onClick={openCart}>
+                    <button className={"button button-cart " + ((!token) ? "none" : "") + " " + style.cart} id="cart-button" onClick={openCart}>
                         <span className="button-cart-svg"></span>
                         <span className="button-text">Корзина</span>
                         {count > 0 && <span className={style.count}>{count}</span>}
                     </button>
-                    <button onClick={closeAuth} className={"button button-primary button-out " + ((!token || !user) ? "none" : "")}>
+                    <button onClick={closeAuth} className={"button button-primary button-out " + ((!token) ? "none" : "")}>
                         <span className="button-text">Выйти</span>
                         <span className="button-out-svg"></span>
                     </button>
