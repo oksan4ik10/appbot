@@ -83,12 +83,12 @@ function App() {
     dispatch(setCount(count))
   }, [])
 
-  const { user } = useTelegram();
+  const { tg, user } = useTelegram();
   useEffect(() => {
-    if (user) {
+    if (tg) {
       setDataTg({
         email: "",
-        name: user.username ? user.username : user.first_name,
+        name: user?.username ? user.username : "Тест",
         phone: "787878",
         tg: true,
         token: "tg"
