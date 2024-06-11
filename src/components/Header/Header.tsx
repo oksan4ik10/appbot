@@ -36,7 +36,7 @@ function Header(props: IProps) {
                 </a>
 
                 <div className={"buttons " + style.btns}>
-                    <span className="user-name"></span>
+                    <span className="user-name">{user?.username}</span>
                     <button className={"button button-primary button-auth " + ((token || user) ? "none" : "")} onClick={openAuth}>
                         <span className="button-auth-svg"></span>
                         <span className="button-text">Войти</span>
