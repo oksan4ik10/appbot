@@ -15,3 +15,8 @@
     background-color: red;
     color: white;
 }
+
+.btns {
+    border: 1px solid red;
+    min-height: 12px;
+}

@@ -35,7 +35,7 @@ function Header(props: IProps) {
                     <img src={urlLogo} alt="Logo" />
                 </a>
 
-                <div className="buttons">
+                <div className={"buttons " + style.btns}>
                     <span className="user-name"></span>
                     <button className={"button button-primary button-auth " + ((token || user) ? "none" : "")} onClick={openAuth}>
                         <span className="button-auth-svg"></span>
