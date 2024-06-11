@@ -86,15 +86,15 @@ function App() {
   const { user } = useTelegram();
   useEffect(() => {
     if (user?.username) {
-      setDataTg({
+      dispatch(setDataTg({
         email: "sdfdfzdsf",
         name: user?.username ? user.username : "Тест",
         phone: "787878",
         tg: true,
         token: "tg"
-      })
+      }))
     }
-  }, [])
+  }, [user])
 
 
   return (
